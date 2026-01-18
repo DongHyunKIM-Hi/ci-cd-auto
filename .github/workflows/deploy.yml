@@ -79,6 +79,6 @@ jobs:
             docker stop cicd-test || true
             docker rm cicd-test || true
             docker run -d \
-              --name app-cicd-test \
+              --name cicd-test \
               -p 8080:8080 \
               $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
